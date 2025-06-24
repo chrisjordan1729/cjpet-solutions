@@ -1,6 +1,148 @@
-<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Contact Us</title><link rel="stylesheet" href="styles.css"></head>
-<body><header>...navigation...</header>
-<main><h2>Contact Us</h2><p>Call us toll-free at 1-800-555-PAWS or email contact@cjpet.com</p><p>Visit us: 123 Pet Street, Los Angeles, CA, 90001</p></main>
-<footer>...contact info...</footer></body></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact CJ Pet Solutions - We’re here to answer your questions and provide the best pet care">
+  <meta name="keywords" content="Pet care contact, CJ Pet Solutions support">
+  <meta name="author" content="CJ Pet Solutions Pvt. Ltd.">
+  <title>Contact Us - CJ Pet Solutions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6f61, #ff9478);
+      color: #fff;
+      padding: 2em 1em;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 4em auto;
+      padding: 2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: slideIn 0.8s ease-in-out;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 1em;
+    }
+
+    .contact-container form {
+      display: grid;
+      gap: 1em;
+    }
+
+    input, textarea {
+      padding: 1em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 1em;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 4em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CJ Pet Solutions Pvt. Ltd.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="lead.html">Get Started</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CJ Pet Solutions Pvt. Ltd.</p>
+    <p>123 Pet Street, Los Angeles, CA, 90001</p>
+    <p>📞 1-800-555-PAWS | ✉️ contact@cjpet.com</p>
+  </footer>
+</body>
+</html>
