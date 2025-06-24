@@ -1,14 +1,157 @@
-<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Book Your Appointment</title><link rel="stylesheet" href="styles.css"></head>
-<body><header>...navigation...</header>
-<main>
-<h2>Get Started with CJ Pet Solutions</h2>
-<form>
-  <label for="name">Name:</label><input type="text" id="name" name="name" required>
-  <label for="email">Email:</label><input type="email" id="email" name="email" required>
-  <label for="service">Service Interested In:</label><input type="text" id="service" name="service" required>
-  <button type="submit">Submit</button>
-</form>
-</main>
-<footer>...contact info...</footer></body></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get started with CJ Pet Solutions - Submit your pet's care needs and we'll take it from there!">
+  <meta name="keywords" content="Book pet services, Grooming appointment, Pet care sign-up">
+  <meta name="author" content="CJ Pet Solutions Pvt. Ltd.">
+  <title>Get Started - CJ Pet Solutions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6f61, #ff9478);
+      color: #fff;
+      padding: 2em 1em;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+    }
+
+    .lead-form-container {
+      max-width: 700px;
+      margin: 4em auto;
+      padding: 2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: riseIn 0.9s ease-in-out;
+    }
+
+    .lead-form-container h2 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 1em;
+    }
+
+    .lead-form-container form {
+      display: grid;
+      gap: 1em;
+    }
+
+    input, select, textarea {
+      padding: 1em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 1em;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes riseIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 4em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CJ Pet Solutions Pvt. Ltd.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="lead.html" class="active">Get Started</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="lead-form-container">
+      <h2>Book Your Pet's Service</h2>
+      <form action="#" method="post">
+        <input type="text" name="owner-name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="pet-name" placeholder="Pet's Name" required>
+        <select name="service">
+          <option value="">Select a Service</option>
+          <option value="grooming">Grooming & Bathing</option>
+          <option value="sitting">Pet Sitting</option>
+          <option value="walking">Pet Walking</option>
+          <option value="custom">Custom Plan</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Any special instructions or notes?"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CJ Pet Solutions Pvt. Ltd.</p>
+    <p>123 Pet Street, Los Angeles, CA, 90001</p>
+    <p>📞 1-800-555-PAWS | ✉️ contact@cjpet.com</p>
+  </footer>
+</body>
+</html>
