@@ -1,6 +1,142 @@
-<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Who We Are</title><link rel="stylesheet" href="styles.css"></head>
-<body><header>...navigation...</header>
-<main><h2>Who We Are</h2><p>CJ Pet Solutions Pvt. Ltd. is a USA-based company that cares for your pets as family.</p></main>
-<footer>...contact info...</footer></body></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the passionate team behind CJ Pet Solutions">
+  <meta name="keywords" content="CJ Pet Solutions team, Who we are">
+  <meta name="author" content="CJ Pet Solutions Pvt. Ltd.">
+  <title>Who We Are - CJ Pet Solutions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6f61, #ff9478);
+      color: #fff;
+      padding: 2em 1em;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+    }
+
+    .team-container {
+      max-width: 900px;
+      margin: 4em auto;
+      padding: 2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .team-container h2 {
+      text-align: center;
+      color: #ff6f61;
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    .team-member {
+      margin-bottom: 2em;
+    }
+
+    .team-member h3 {
+      margin-bottom: 0.2em;
+      color: #333;
+    }
+
+    .team-member p {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 4em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CJ Pet Solutions Pvt. Ltd.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="who-we-are.html" class="active">Who We Are</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="lead.html">Get Started</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="team-container">
+      <h2>Meet Our Team</h2>
+
+      <div class="team-member">
+        <h3>Chris Jordan - Founder & Pet Care Specialist</h3>
+        <p>Chris is a lifelong pet lover with over a decade of experience in pet wellness and grooming. His mission is to ensure every pet feels safe, loved, and well-cared for under CJ Pet Solutions' services.</p>
+      </div>
+
+      <div class="team-member">
+        <h3>Jamie Lee - Certified Groomer</h3>
+        <p>Jamie brings professional grooming techniques and gentle handling skills to make every session stress-free for both pets and their owners.</p>
+      </div>
+
+      <div class="team-member">
+        <h3>Maria Alvarez - Pet Walker & Sitter</h3>
+        <p>Maria ensures your pets get their daily exercise and companionship. Whether it's a long walk or an overnight stay, your pet is in loving hands.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 CJ Pet Solutions Pvt. Ltd.</p>
+    <p>123 Pet Street, Los Angeles, CA, 90001</p>
+    <p>📞 1-800-555-PAWS | ✉️ contact@cjpet.com</p>
+  </footer>
+</body>
+</html>
