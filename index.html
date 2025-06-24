@@ -1,55 +1,160 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CJ Pet Solutions offers trusted, non-emergency pet care services including grooming, sitting, and walking in Los Angeles, CA.">
-  <meta name="keywords" content="Pet Grooming, Pet Sitting, Dog Walking, Pet Services USA, CJ Pet Solutions">
-  <meta name="author" content="CJ Pet Solutions Pvt. Ltd.">
-
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="CJ Pet Solutions - Trusted Pet Care in Los Angeles">
-  <meta property="og:description" content="Professional pet grooming, walking, and sitting services from CJ Pet Solutions.">
-  <meta property="og:image" content="https://chrisjordan1729.github.io/cjpet-solutions/images/A_photograph_captures_a_professional_dog_groomer_g.png">
-  <meta property="og:url" content="https://chrisjordan1729.github.io/cjpet-solutions/">
-  <meta property="og:type" content="website">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CJ Pet Solutions offers trusted, non-emergency pet care services including grooming, sitting, and walking in Los Angeles, CA." />
+  <meta name="keywords" content="Pet Grooming, Pet Sitting, Dog Walking, Pet Services USA, CJ Pet Solutions" />
+  <meta name="author" content="CJ Pet Solutions Pvt. Ltd." />
+  <meta property="og:title" content="CJ Pet Solutions - Trusted Pet Care in Los Angeles" />
+  <meta property="og:description" content="Professional pet grooming, walking, and sitting services from CJ Pet Solutions." />
+  <meta property="og:image" content="https://chrisjordan1729.github.io/cjpet-solutions/images/A_photograph_captures_a_professional_dog_groomer_g.png" />
+  <meta property="og:url" content="https://chrisjordan1729.github.io/cjpet-solutions/" />
+  <meta property="og:type" content="website" />
   <title>CJ Pet Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6f61, #ff9478);
+      color: #fff;
+      padding: 2em 1em;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+    }
+
+    main {
+      text-align: center;
+      padding: 4em 2em;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: center;
+      gap: 2em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero .content h2 {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+      color: #ff6f61;
+    }
+
+    .hero .content ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin-top: 2em;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #218838;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 4em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>CJ Pet Solutions Pvt. Ltd.</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="who-we-are.html">Who We Are</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="lead.html">Get Started</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>Our Services</h2>
-    <ul>
-      <li>Pet Grooming</li>
-      <li>Bathing</li>
-      <li>Pet Sitting</li>
-      <li>Pet Walking</li>
-      <li>Customized Pet Care Plans</li>
-    </ul>
-    <img src="A_photograph_captures_a_professional_dog_groomer_g.png" alt="Pet Grooming" style="width:100%; max-width:600px;">
-  </section>
-  <section>
-    <a href="lead.html" class="cta-button">Book Your Pet's Appointment</a>
-  </section>
-</main>
-<footer>
-  <p>&copy; 2025 CJ Pet Solutions Pvt. Ltd.</p>
-  <p>Address: 123 Pet Street, Los Angeles, CA, 90001, USA</p>
-  <p>Toll-Free: 1-800-555-PAWS | Email: contact@cjpet.com</p>
-</footer>
+  <header>
+    <h1>CJ Pet Solutions Pvt. Ltd.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="lead.html">Get Started</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="content">
+        <h2>Professional Pet Care Services</h2>
+        <ul>
+          <li>✓ Grooming & Bathing</li>
+          <li>✓ Pet Sitting</li>
+          <li>✓ Pet Walking</li>
+          <li>✓ Tailored Care Plans</li>
+        </ul>
+        <a href="lead.html" class="cta-button">Book Your Pet's Appointment</a>
+      </div>
+      <img src="images/A_photograph_captures_a_professional_dog_groomer_g.png" alt="Pet Grooming" />
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 CJ Pet Solutions Pvt. Ltd.</p>
+    <p>123 Pet Street, Los Angeles, CA, 90001</p>
+    <p>📞 1-800-555-PAWS | ✉️ contact@cjpet.com</p>
+  </footer>
 </body>
 </html>
